@@ -1,0 +1,124 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+}
+ 
+.backgroundDiv{
+    background-image: url('images\\background.jpeg');
+    height: 100vh;
+    width: 100vw;
+    filter: blur(4px);
+} 
+
+.colorPicker{
+	margin-bottom:20px;
+}
+
+.mainContainer{
+    position : absolute;
+    top : 0;
+    left : 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container{    
+	width:100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.ImageContainer {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.Image {
+	width:200px;
+	height:160px;
+}
+
+img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+img:hover{
+    transform: scale(1.1); 
+    box-shadow: 0px 25px 40px #000;
+    z-index: 1;
+}
+
+.box01{
+	min-width:1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	margin-top:50px;
+
+}
+
+.description{
+    width:800px;
+    height: 200px;
+    left:300px;
+    font-family: sans-serif;
+    border-radius:8px;
+    border: 2px solid  #6495ED;
+    background:white;
+	margin:50px;
+    font-size:18px;
+    text-align:center;
+    align-content: center;
+    border-style: double;
+}
+
+button{
+    padding: 10px 20px;
+}
+
+/* added css*/
+#colorButton {
+	padding:5px;
+	margin-left:5px;
+}
+
+.colorLabels {
+	padding:20px;
+	color:black;
+	font-weight:bold;
+	font-size:22px;
+}
+
+.mainImageContainer {
+   
+   justify-content: center;
+   align-items: center;
+}
+
+
+.mainImage {
+	width:350px;
+	height:300px;
+}
+
+#paragraph {
+	padding:5px;
+}
+
+#desTopic {
+	font-weight:bold;
+	font-size:25px;
+	
+}

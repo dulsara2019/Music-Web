@@ -1,0 +1,32 @@
+.intro{
+	
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+ 
+}
+
+#btn{
+	font-size: 1.5em;
+    font-weight: bolder;
+    word-break: break-all;
+    width:160px;
+    height:150px;
+    border : 2px solid #2F4F4F;
+    cursor: pointer;
+    position: absolute;
+    right:600px;
+    top:250px;
+    color : #2F4F4F;
+	padding-top:17px;
+	
+}
+
+body {
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100%;
+			}
+
+
+	
+	

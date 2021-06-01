@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Header -->
+    <head>
+        <link rel = "StyleSheet" href = "css/gallery.css">
+        <link rel="Stylesheet" href="css/main1.css">
+        <meta charset="UTF-8">
+        <title> Images </title>
+    </head>
+
+<body>
+    <div class="backgroundDiv"></div>
+        <div class="mainContainer">
+            <div class="top">
+            <a class="back" href="#top"></a>
+            </div>
+
+                <nav class="navbar">
+                    <img class ="logo" src="css\\images\\L1.jpg">
+                    <ul>
+                        <li><a href="main.html" id="Button">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="Shop.html">Store</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="QuizStart.html">Quiz</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                        <li><a href="feedback.html">FeedBack</a></li>
+                    </ul>
+                </nav>
+
+        
+        <!-- Thumbnail Images -->
+        <div class = "container">
+            <div class = "ImageContainer">
+                <a target="_blank" href="css\\images\\img⁄piano.jpg">
+                <img src = "css\\images\\img⁄piano.jpg" alt = "Keyboard" class = "Image" onmouseover="picOne()">
+                </a>
+            </div>
+            <div class = "ImageContainer">
+                <a target="_blank" href="css\\images\\img⁄violin.jpg"> 
+                <img src = "css\\images\\img⁄violin.jpg" alt = "String" class = "Image" onmouseover="picTwo()">
+                </a> 
+            </div>
+            <div class = "ImageContainer">
+                <a target="_blank" href="css\\images\\img⁄flute.jpg">
+                <img src = "css\\images\\img⁄flute.jpg" alt = "Wind" class = "Image" onmouseover="picThree()">
+                </a>
+            </div>
+            <div class = "ImageContainer">
+                <a target="_blank" href="css\\images\\img⁄percussion.jpeg" onmouseover="picFour()">
+                <img src = "css\\images\\img⁄percussion.jpeg" alt = "Percussion" class = "Image">
+                </a>
+            </div>
+			<div class = "ImageContainer">
+                <a target="_blank" href="css\\images\\img⁄sax.jpg">
+                <img src = "css\\images\\img⁄sax.jpg" alt = "Keyboard" class = "Image" onmouseover="picFive()">
+                </a>
+            </div>
+        </div>
+
+	<div class="box01">
+	
+		<!--Main Image -->
+		<div class = "mainImageContainer">
+                <a href="css\\images\\img⁄piano.jpg">
+                <img src = "css\\images\\img⁄piano.jpg" alt = "Main Image" class = "mainImage" Id = "mainImage">
+                </a>
+        </div>
+	
+        
+        <!--Background colour changer -->
+		<div class="description" id="description">
+            <span id="desTopic">SL Music Store</span>
+			<p id="paragraph">
+            <br>We sell new and used instruments to customers. 
+            <br>We offer instruments used in traditional music ensembles, including brass, percussion, wind, and  
+            <br>string instruments. We also offer electronic keyboards, upright pianos, and classical grand pianos. 
+            You also can buy musical instruments for rock bands such as electric, acoustic and bass guitars, 
+            and drum kits at reasonable prices.
+            </p>
+        </div>
+		
+		
+		<!--Background colour changer -->
+		<div class="colorPicker">
+            <label for = 'colorInput' class="colorLabels">Background Colour:</label>
+			<input type="color" id="colorInput">
+            <input type="button" id="colorButton" value="Click to change color" onclick="changeColor()">
+        </div>
+		
+		<!--Font colour changer -->
+		<div class="fontColorPicker">
+            <label for = 'fontColor' class="colorLabels">Text Colour:</label>
+			<select id = 'fontColor' name = 'fontColor' >
+				<option value = 'selectHere'>---Select Here---</option>
+				<option value = 'green'>Green</option>
+				<option value = 'red'>Red</option>
+				<option value = 'blue'>Blue</option>
+			<select>
+        </div>
+		
+		
+		
+	</div>
+
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <img class ="logo1" src="css\\images\\L1.jpg">
+            <div class="footer1">
+                <h1>Explore</h1></br>
+                <a href="main.html">Home</a><br>
+                <a href="gallery.html">Gallery</a><br>
+                <a href="Shop.html">Store</a><br>
+                <a href="About Us.html">About</a><br>
+                <a href="QuizStart.html">Quiz</a><br>
+                <a href="sitemap.html">Sitemap</a><br>
+                <a href="feedback.html">FeedBack</a>
+            
+            </div>
+            <div class="footer2">
+                <h1>Contact Us</h1><br>
+                    <p>50/1,<br>
+                        Vijaya Rd,<br>
+                        Gampaha<br>
+                        +94 770000001<br>
+                        slmusic@gmail.com</p>
+                    <a style="display:block" href="https://www.facebook.com/">
+                    <img src="css\\images\\fb.jpg" alt="facebook" class="fb">
+                    </a>
+                    <a style="display:block" href="https://www.instagram.com/">
+                    <img src="css\\images\\insta.jpg" alt="instagram" class="insta">
+                    </a>
+            </div>
+            <div class="footer3">
+                    <h1>Find Us on</h1>
+                    </div>
+                <div class="page-editor">
+                <a href="thinayani.html"><i><b>Done by Student4:<br>
+                            Thinayani Gamage</i></b></a>
+                </div>
+        </div>
+    </div>
+
+
+    
+	<!--Background colour change -->
+	<script>
+            function changeColor() {
+                let color=document.getElementById("colorInput").value;
+                document.body.style.backgroundColor=color;
+            }
+        </script>
+    
+	<!--font colour change -->
+	<script>
+		document.getElementById('fontColor').addEventListener('change' , changeColorF );
+        function changeColorF() {
+		var selectedColorF = document.getElementById('fontColor').value ;
+		
+		if ( selectedColorF == 'green') {
+			document.getElementById('description').style.color = 'green' ;
+		}
+		else if ( selectedColorF == 'red') {
+			document.getElementById('description').style.color = 'red' ;
+		}
+		else if ( selectedColorF == 'blue') {
+			document.getElementById('description').style.color = 'blue' ;
+		}
+		else {
+			document.getElementById('description').style.color = 'black' ;
+		}
+	}
+	
+	</script>
+	
+	<!--Change Main image on mouseover -->
+	<script>
+		function picOne() {
+		document.getElementById('mainImage').src = "css\\images\\img⁄piano.jpg";
+        document.getElementById('paragraph').innerHTML  = " Piano, also called pianoforte, French piano or pianoforte, German Klavier, a keyboard musical instrument having wire strings that sound when struck by felt-covered hammers operated from a keyboard. The standard modern piano contains 88 keys and has a compass of seven full octaves plus a few keys.";
+		document.getElementById('desTopic').innerHTML  = "Piano";
+	
+	}
+	function picTwo() {
+		document.getElementById('mainImage').src = "css\\images\\img⁄violin.jpg";
+		document.getElementById('paragraph').innerHTML  = "The violin is a string instrument which has four strings and is played with a bow. ... The violin is the smallest and highest pitched string instrument typically used in western music. A person who plays the violin is called a violinist. A person who makes or repairs violins is called a luthier.";
+		document.getElementById('desTopic').innerHTML  = "Violin";
+	
+	}
+	function picThree() {
+		document.getElementById('mainImage').src = "css\\images\\img⁄flute.jpg";
+		document.getElementById('paragraph').innerHTML  = "The Western concert flute is a family of transverse (side-blown) woodwind instruments made of metal or wood. It is the most common variant of the flute. A musician who plays the flute is called a flautist (most commonly in the UK), flutist, flute player, or (rarely) fluter.";
+		document.getElementById('desTopic').innerHTML  = "Western Flute";
+	
+	}
+	function picFour() {
+		document.getElementById('mainImage').src = "css\\images\\img⁄percussion.jpeg";
+		document.getElementById('paragraph').innerHTML  = "In the former, the drum, or trap, set—bass drum with foot-operated beater, snare drum, set of tom-toms (cylindrical drums graduated in size), and suspended cymbals—is treated as a solo instrument among its peers. The latter has been preoccupied with rhythmic stress and has exploited drum tones for their own…";
+		document.getElementById('desTopic').innerHTML  = "Drum Kit";
+	
+	}
+	function picFive() {
+		document.getElementById('mainImage').src = "css\\images\\img⁄sax.jpg";
+		document.getElementById('paragraph').innerHTML  = "The saxophone (referred to colloquially as the sax) is a family of woodwind instruments usually made of brass and played with a single-reed mouthpiece. ... The saxophone is also used as a solo and melody instrument or as a member of a horn section in some styles of rock and roll and popular music.";
+		document.getElementById('desTopic').innerHTML  = "Saxaphone";
+	
+	}
+
+	</script>
+
+</body>
+
+</html> 

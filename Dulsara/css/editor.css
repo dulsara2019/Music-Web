@@ -1,0 +1,32 @@
+body{
+	padding:0px;
+	background:#E6E6FA;
+	margin:0px;
+}
+.name{
+	font-size:13px;
+	text-align:center;
+	height:150px;
+	width:100%;
+	background-color:black;
+	color:white;
+}
+.task{
+	text-align:center;
+	top:300px;
+	
+}
+.img{
+	height:250px;
+	width:300px;
+	border-radius:5%;
+
+}
+
+.box{
+	left:40%;
+	position:absolute;
+	top:55%;
+	
+}
+	

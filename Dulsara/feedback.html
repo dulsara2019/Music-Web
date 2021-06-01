@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedback Page</title>
+	<meta charset='UTF-8'>
+	<link rel="Stylesheet" href="css/main1.css">
+	<link rel="Stylesheet" href="css/feedback.css">
+	
+<head>
+<script>
+function validateform(){
+var name=document.form.name.value;
+var email=document.form.email.value;
+var comment=document.form.comment.value;
+var rate=document.form.rate.value;
+
+if(name==""){
+alert("Please enter your name");
+return false;
+}
+else if(email==""){
+alert("Please enter your email");
+return false;
+}
+else if (comment==""){
+alert("Please leave your comment");
+return false;
+}
+else{
+alert("Dear "+name+" ,Thank you very much for your feedback. You have rated our site as "+rate+" and your comment was "+comment);
+}
+}
+</script>
+<a name="top"></a>
+<body>
+	<div class ="top">
+	<a class ="back" href="#top">Back to Top</a>
+	</div>
+		<nav class="navbar">
+			<img class ="logo" src="css\\images\\L1.jpg">
+			<ul>
+				<li><a href="main.html">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="Shop.html">Store</a></li>
+				<li><a href="About Us.html">About</a></li>
+				<li><a href="QuizStart.html">Quiz</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+				<li><a href="feedback.html">FeedBack</a></li>
+			</ul>
+			</nav>
+			
+	<form name="form" method="post">
+	<div class="feedback-form">
+		<h1 class="head">Give Us your FeedBack</h1>
+	</div>
+	<div class="input1"> 
+		<label for="name">Name :</label>
+		<input type="text" id="name" name="name">
+	</div>
+	<div class="input2">
+		<label for="email">Email :</label>
+		<input type="text" id="email" name="email">
+	</div>
+	<div class="input3">
+		<label for="comment">Comment:</label>
+		<input type="text" class="comment" name="comment">
+	</div>
+	<div class="rate-website">
+	<h2>Please Rate Us</h2>
+	</div>
+	
+	<div class="radio-buttons">
+		<input type="radio" class="radio" id="bad" name="rate" value="Bad">
+		<label for="bad">Bad</label><br>
+		<input type="radio" class="radio" id="good" name="rate" value="Good">
+		<label for="good">Good</label><br>
+		<input type="radio" class="radio" id="perfect" name="rate" value="Perfect">
+		<label for="perfect">Perfect</label>
+	</div>
+	
+	<div class="button1">
+		<button class="submit-button" onclick="validateform();">Submit</button>
+	</div>
+	
+</form>
+			
+<div class="footer">
+	<img class ="logo1" src="css\\images\\L1.jpg">
+	<div class="footer1">
+		<h1>Explore</h1></br>
+		<a href="main.html">Home</a><br>
+		<a href="gallery.html">Gallery</a><br>
+		<a href="Shop.html">Store</a><br>
+		<a href="About Us.html">About</a><br>
+		<a href="QuizStart.html">Quiz</a><br>
+		<a href="sitemap.html">Sitemap</a><br>
+		<a href="feedback.html">FeedBack</a>
+	
+	</div>
+	<div class="footer2">
+		<h1>Contact Us</h1><br>
+			<p>50/1,<br>
+				Vijaya Rd,<br>
+				Gampaha<br>
+				+94 770000001<br>
+				slmusic@gmail.com</p>
+			<a style="display:block" href="https://www.facebook.com/">
+			<img src="css\\images\\fb.jpg" alt="facebook" class="fb">
+			</a>
+			<a style="display:block" href="https://www.instagram.com/">
+			<img src="css\\images\\insta.jpg" alt="instagram" class="insta">
+			</a>
+	</div>
+		<div class="footer3">
+			<h1>Find Us on</h1>
+			</div>
+		<div class="page-editor">
+		<a href="Dulsara.html"><i><b>Done by Student2:<br>
+					Dulsara Ranaweera</i></b></a>
+		</div>
+</div>
+</body>
+</html>
+		

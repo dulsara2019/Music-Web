@@ -1,0 +1,104 @@
+
+body{
+	background:url("images\\article.jpg") no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	
+}
+	
+.about{
+  position: absolute;
+  top: 90px;
+  left:6%;
+  width: 1330px;
+  height: 1500px;
+  background: transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.topic{
+  font-family:cursive;
+  position: absolute;
+  top: 25px;
+  left:35%;
+  text-align:left;
+  color:black;
+  font-size:20px;
+}
+.Piano1{
+  position: absolute;
+  top: 97px;
+  left: 40px;
+  width: 400px;
+  height: 250px;
+}
+.Piano2{
+  position: absolute;
+  top: 97px;
+  left: 477px;
+  width: 400px;
+  height: 250px;
+}
+.keyboard1{
+  position: absolute;
+  top: 97px;
+  left: 910px;
+  width: 400px;
+  height: 250px;
+}
+
+.intro{
+  position: absolute;
+  width:1270px;
+  height: 310px;
+  top: 390px;
+  left:40px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:5px;
+  border: 2px solid  #6495ED;
+  background:white;
+  font-size:18px;
+  text-align:center;
+}
+
+.description{
+  position: absolute;
+  width:1270px;
+  height: 410px;
+  top: 720px;
+  left:40px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:5px;
+  border: 2px solid  #6495ED;
+  background:white;
+  text-align:center;
+  font-size:18px;
+}
+
+
+.content img{
+	transition:2s;
+}
+
+.content:hover img{
+	transform:scale(1.5);
+}
+
+h2{
+	text-align:center;
+	font-family:cursive;
+	font-size:35px;
+	color:black;
+}
+
+.back{
+	position:fixed;
+	bottom:20px;
+	right:50px;
+	z-index:99;
+	text-decoration:none;
+	color:white;
+	background-color:blue;
+	
+}
